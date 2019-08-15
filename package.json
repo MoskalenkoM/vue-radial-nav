@@ -1,0 +1,95 @@
+{
+  "name": "vue-radial-nav",
+  "description": "simple radial nav on vue.js",
+  "version": "1.0.0",
+  "author": "MoskalenkoM",
+  "license": "MIT",
+  "scripts": {
+    "del": "rimraf dist",
+    "delmodules": "rimraf node_modules",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "file-loader": "^4.2.0",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-media-minmax": "^4.0.0",
+    "postcss-nested": "^4.1.2",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "vue-eslint-parser": "^6.0.3",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-nested": {},
+      "postcss-media-minmax": {},
+      "postcss-custom-properties": {},
+      "autoprefixer": {}
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 2017,
+      "allowImportExportEverywhere": false,
+      "sourceType": "module"
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/strongly-recommended",
+      "airbnb-base",
+      "prettier"
+    ],
+    "plugins": [
+      "vue"
+    ],
+    "rules": {
+      "global-require": "off",
+      "no-param-reassign": "off",
+      "no-console": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
