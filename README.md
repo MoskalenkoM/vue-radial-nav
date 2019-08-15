@@ -74,6 +74,7 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ## Deploy
 
-- install Node.js ^11.14.0
-- run **_npm i_** in root frontend directory for build web application
-- deploying files **_index.html_**, **_favicon.svg_**, **_manifest.json_** and directory **_dist_** with all content
+- install Node.js ^11.10.0
+- run **_npm i_** in root frontend directory for install dependencies
+- run **_npm run build_** in root frontend directory for build web application
+- deploying files **_index.html_**, **_favicon.svg_** and directory **_dist_** with all files
